@@ -35,7 +35,7 @@ const sessionSlice = createSlice({
             })
             .addCase(fetchSessionId.fulfilled, (state, action) => {
                 state.sessionId = action.payload;
-                state.status = SessionStatus.IDLE;
+                state.status = SessionStatus.SUCCESSFUL;
             })
             .addCase(fetchSessionId.rejected, (state) => {
                 state.status = SessionStatus.FAILED;

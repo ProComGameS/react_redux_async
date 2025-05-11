@@ -17,7 +17,7 @@ export function Account () {
         <p>Accounts page</p>
             {status === SessionStatus.LOADING && <p>Loading...</p>}
             {status === SessionStatus.FAILED && <p>Error.</p>}
-            {sessionId && status === SessionStatus.IDLE && <p>ID: {sessionId} </p>}
+            {sessionId && status === SessionStatus.SUCCESSFUL && <p>ID: {sessionId} </p>}
         </>
     )
 
